@@ -5,6 +5,10 @@ body{
 
 #container {
     display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
 }
 
 .cartão{
@@ -13,6 +17,45 @@ body{
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
+    
+}
+.cartão__flashcards{
+   text-align: center; 
+   background-color: rgba(9, 201, 201, 0.412);
+   height: 100%;
+   transform-style: preserve-3d;
+   transition: transorm 300ms ease-in-out;
+   margin-top: 4rem;
+
+}   
+
+.cartão__flashcards h3{
+    background-color: darkmagenta ;
+    border: 1px solid ;
+text-align: left;
+padding: 0.5rem;
+position: absolute;
+margin: 0.5rem;
+border-radius: 0.6rem;
+font-size: 1vw;
+backface-visibility: hidden;
+
+}
+
+.cartão__flashcards__perguntas  {
+    color: rgb(118, 6, 170);
+    font-weight: 500;
+   
+}
+
+.cartão__flashcards__respostas  {
+    color: rgba(65, 6, 124, 0.958);
+    font-weight: 700;
+  
+}  
+
+.cartão:hover .cartão__flashcards{
+    transform: rotateY(180deg);
 }
 
 footer{
@@ -24,14 +67,23 @@ footer{
     height: 2rem;
     margin-top: 0.5rem;
 }
-.cartão__flashcards_h3{
-    background-color: darkmagenta ;
-text-align: left;
+
+.cartão__flashcards__perguntas,
+.cartão__flashcards__respostas
+{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
-
+.cartão__flashcards__respostas{
+transform: rotateY(180deg);
+}
 
 footer p{
     text-align: center;
     font-size: 0.6rem;
 }
+
+
