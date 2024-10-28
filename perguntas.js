@@ -9,3 +9,9 @@ criacartao(
     "Qual o país que é dividido por duas ilhas?",
     "Nova Zelândia"
 )
+
+criacartao(
+    "curiosidade",
+    "qual o unico animal que é o macho que gesta?",
+    "o cavalo marinho"
+)
